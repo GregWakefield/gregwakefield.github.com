@@ -3,7 +3,7 @@
 html {
   border: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #333333;
 }
@@ -20,9 +20,8 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-family: 'Bodoni Moda', serif;
   font-size: 4rem;
-  line-height: 4.5rem;
+  line-height: 5rem;
   font-weight: 700;
-  font-style: italic;
 }
 
 h2 {
@@ -30,7 +29,8 @@ h2 {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
+  font-style: italic;
 }
 
 
@@ -69,7 +69,7 @@ a:link {
 }
 
 a:visited {
-  color: #BFD9EF;
+  color: #7F0930;
 }
 
 a:hover {
@@ -149,11 +149,13 @@ header a:hover {
   position: relative;
   top: 85px; /* To offset for fixed header. */
   
-  padding: 2rem 1rem;
+  padding: 5rem 1rem 2rem 1rem;
   margin: 0;
 
   display: flex;
   flex-direction: column;
+
+  background-color: #f1f1f1;
 }
 
 
@@ -162,7 +164,6 @@ header a:hover {
   top: 85px;
   
   margin: 0;
-  margin-bottom: 3rem;
   padding: 8rem 4rem 6rem 4rem;
   text-align: center;
   
@@ -181,18 +182,26 @@ header a:hover {
 
 section {
   margin-bottom: 5rem;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .card {
   padding: 1rem;
   border: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
 }
 
 .font-card {
   padding: 1rem;
   border: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -200,9 +209,8 @@ section {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  flex-basis: 20%;
-  min-width: 10rem;
-  border-right: 1px solid #e5e5e5;
+  flex-basis: 10%;
+  min-width: 11rem;
   padding-right: 1rem;
 
 }
@@ -211,15 +219,42 @@ section {
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-  flex-basis: 80%;
-  padding-left: 2rem;
-  flex-wrap: wrap;
+  flex-basis: 50%;
+  padding-left: .5rem;
 }
 
 .font-specs {
   list-style: none;
   padding-left: .5rem;
   margin-bottom: 2rem;
+}
+
+blockquote {
+  border-top: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+  text-align: center;
+  margin: 3rem 0rem;
+  padding: 1rem;
+}
+
+.quote-text {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  margin: 3rem 0rem 2rem;
+}
+
+.quote-attribution {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin: 2rem 0rem 3rem;
 }
 
 
@@ -280,6 +315,10 @@ section {
   background-color: #e5e5e5;
 }
 
+.basic-tint-2 {
+  background-color: #f1f1f1;
+}
+
 .basic-shade {
   background-color: #000000;
 }
@@ -288,7 +327,7 @@ section {
 /* button styles */
 
 .button-primary:link {
-  margin: 1.5rem 0;
+  margin: .5rem 0 1rem;
   padding: 1.5rem 3rem;
   background-color: #89F4BA;
   border-radius: .875rem;
@@ -353,7 +392,8 @@ section {
 
 .button-secondary:hover{
   background-color: #CCFFE1;
-  color: #333333;
+  color: #52B279;
+  border: 2px solid #52B279;
   transition: all .4s ease-in-out .05s;
 }
 
