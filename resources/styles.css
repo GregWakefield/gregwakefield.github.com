@@ -1,0 +1,247 @@
+/* Universal Styles */
+
+html {
+  border: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: .5rem 0;
+  color: #333333;
+}
+
+h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+h5 {
+  font-family: 'Bodoni', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a:link {
+  color: #88BBF2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #BFD9EF;
+}
+
+a:hover {
+  color: #527FAF;
+}
+
+a:active {
+  color: #BC0A34;
+}
+
+
+
+
+/* header and navigation styles */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+header .content{
+  height: 85px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 1rem 1rem;
+  
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+
+header a:link {
+  color: #ffffff;
+}
+
+header a:visited {
+  color: #ffffff;
+}
+
+header a:hover {
+ color: #e5e5e5;
+}
+
+.gdi-logo {
+  flex: 2;
+  padding-left: 1rem;
+  font-family: 'Bodoni', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: .25rem;
+}
+
+
+/* main content area styles */
+
+.main-content {
+  position: relative;
+  top: 85px; /* To offset for fixed header. */
+  
+  padding: 2rem 1rem;
+  margin: 0;
+}
+
+
+.hero {
+  
+  position: relative;
+  top: 85px;
+  
+  margin: 0;
+  padding: 4rem 4rem;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.hero h1, .hero h4 {
+  display: flex;
+  color: white;
+  margin: 1rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.font-card {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+}
+
+.font-specs {
+  list-style: none;
+  padding-left: .5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+/* color swatches */
+
+.swatch {
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 4rem;
+}
+
+.succulent {
+  background-color: #89F4BA;
+}
+
+.succulent-tint {
+  background-color: #CCFFE1;
+}
+
+.succulent-shade {
+  background-color: #52B279;
+}
+
+
+.wine {
+  background-color: #BC0A34;
+}
+
+.wine-tint {
+  background-color: #DD6B89;
+}
+
+.wine-shade {
+  background-color: #7F0930;
+}
+
+
+.denim {
+  background-color: #88BBF2;
+}
+
+.denim-tint {
+  background-color: #BFD9EF;
+}
+
+.denim-shade {
+  background-color: #527FAF;
+}
+
+
+.basic {
+  background-color: #333333;
+}
+
+.basic-tint {
+  background-color: #e5e5e5;
+}
+
+.basic-shade {
+  background-color: #000000;
+}
+
+
