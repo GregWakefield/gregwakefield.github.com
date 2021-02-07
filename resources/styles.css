@@ -52,7 +52,7 @@ h5 {
   font-family: 'Bodoni', serif;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   font-style: italic;
 }
 
@@ -80,6 +80,15 @@ a:active {
   color: #BC0A34;
 }
 
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+}
 
 
 
@@ -142,6 +151,9 @@ header a:hover {
   
   padding: 2rem 1rem;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -151,7 +163,7 @@ header a:hover {
   top: 85px;
   
   margin: 0;
-  padding: 4rem 4rem;
+  padding: 8rem 4rem 6rem 4rem;
   text-align: center;
   
   display: flex;
@@ -171,9 +183,33 @@ section {
   margin-bottom: 5rem;
 }
 
+.card {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+}
+
 .font-card {
   padding: 1rem;
   border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.font-spec-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 1rem;
+}
+
+.font-sample-column {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 2rem;
+  flex-wrap: wrap;
 }
 
 .font-specs {
@@ -245,3 +281,81 @@ section {
 }
 
 
+/* button styles */
+
+.button-primary:link {
+  margin: 1.5rem 0;
+  padding: 1.5rem 3rem;
+  background-color: #89F4BA;
+  border-radius: .875rem;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: .25px;
+  text-align: center;
+  display: inline-block;
+  min-width: 10rem;
+
+}
+
+.button-primary:visited{
+  background-color: #89F4BA;
+  color: #333333;
+}
+
+.button-primary:hover{
+  background-color: #CCFFE1;
+  color: #333333;
+  transition: all .4s ease-in-out .05s;
+}
+
+.button-primary:active{
+  background-color: #CCFFE1;
+  color: #52B279;
+  font-size: 1.3rem;
+  padding-bottom: 1.6rem;
+  transition: all .1s ease-out .05s;
+}
+
+
+.button-right {
+  align-self: flex-end;
+}
+
+.button-left {
+  align-self: flex-start;
+}
+
+.button-secondary:link {
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border: 2px solid #52B279;
+  border-radius: .75rem;
+  color: #52B279;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .25px;
+  text-align: center;
+  display: inline-block;
+  min-width: 10rem;
+
+}
+
+.button-secondary:visited{
+  background-color: #ffffff;
+  color: #52B279;
+}
+
+.button-secondary:hover{
+  background-color: #CCFFE1;
+  color: #333333;
+  transition: all .4s ease-in-out .05s;
+}
+
+.button-secondary:active{
+  background-color: #CCFFE1;
+  border: 2px solid #52B279;
+  color: #52B279;
+  transition: all .1s ease-out .05s;
+}
