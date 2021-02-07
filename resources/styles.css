@@ -183,6 +183,7 @@ header a:hover {
 }
 
 
+
 .hero h1, .hero h4 {
   display: flex;
   color: white;
@@ -194,6 +195,7 @@ section {
   background-color: #ffffff;
   padding: 3rem;
   border-bottom: 2px solid #e5e5e5;
+  
 }
 
 .card {
@@ -288,9 +290,12 @@ blockquote {
 }
 
 .succulent-gradient {
-  background-image: linear-gradient(120deg, #89F4BA, #52B279); 
+  background-color: linear-gradient(120deg, #89F4BA, #52B279); 
 }
 
+.succulent-herobg {
+  background: linear-gradient(120deg, rgba(137, 244, 186, .6), rgba(82, 178, 121, .6)), url(images/alexander-horl-IUKP6-dLvIU-unsplash.jpg) center/cover; 
+}
 
 
 .wine {
