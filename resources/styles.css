@@ -130,7 +130,7 @@ header a:visited {
 }
 
 header a:hover {
- color: #e5e5e5;
+ color: #333333;
 }
 
 .gdi-logo {
@@ -172,7 +172,15 @@ header a:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
+
 
 .hero h1, .hero h4 {
   display: flex;
@@ -280,6 +288,11 @@ blockquote {
   background-color: #52B279;
 }
 
+.succulent-gradient {
+  background-image: linear-gradient(120deg, #89F4BA, #52B279); 
+}
+
+
 
 .wine {
   background-color: #BC0A34;
@@ -293,6 +306,10 @@ blockquote {
   background-color: #7F0930;
 }
 
+.wine-gradient {
+  background-image: linear-gradient(120deg, #BC0A34, #7F0930);
+}
+
 
 .denim {
   background-color: #88BBF2;
@@ -304,6 +321,10 @@ blockquote {
 
 .denim-shade {
   background-color: #527FAF;
+}
+
+.denim-gradient {
+  background-image: linear-gradient(120deg, #88BBF2, #527FAF);
 }
 
 
@@ -321,6 +342,10 @@ blockquote {
 
 .basic-shade {
   background-color: #000000;
+}
+
+.basic-gradient {
+  background-image: linear-gradient(120deg, #333333, #000000);
 }
 
 
