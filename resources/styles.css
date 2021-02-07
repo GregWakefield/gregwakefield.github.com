@@ -199,15 +199,19 @@ section {
 .font-spec-column {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 20%;
   min-width: 10rem;
   border-right: 1px solid #e5e5e5;
   padding-right: 1rem;
+
 }
 
 .font-sample-column {
   display: flex;
   flex-direction: column;
-
+  flex-grow: 2;
+  flex-basis: 80%;
   padding-left: 2rem;
   flex-wrap: wrap;
 }
