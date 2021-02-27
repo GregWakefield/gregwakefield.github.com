@@ -293,6 +293,11 @@ p, li {
   height: 300px;
 }
 
+
+.hero-image h1{
+  font-size: 8rem;
+}
+
 .footer-image {
   height: 200px;
 }
